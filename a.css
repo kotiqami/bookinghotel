@@ -1,0 +1,153 @@
+.logo{
+    border-bottom: 1px solid hsl(36, 22%, 86%);
+    width: 230px;
+    height: 65px;
+}
+*{
+    padding: 3px;
+}
+
+.weather{
+    position: relative;
+    background-color: hsl(44, 84%, 75%);
+    padding: 5px;
+    height: 100px;
+    border-radius: 15px;
+    top: 350px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.weather:hover{
+    transform: scale(1.1);
+}
+
+.weatherimage{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.left{
+    border: 1px solid hsl(36, 22%, 86%);
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    height: 400px;
+    position: relative;
+    transform: rotate(-3deg);
+    left: 15px;
+    bottom: 100px;
+    box-shadow: 0px 1px 2px black;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.left:hover{
+    transform: scale(1.1);
+}
+.menubuttons{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.menubuttons:hover{
+    transform: scale(1.1);
+}
+.right{
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(to bottom left, hsl(22, 72%, 56%),hsl(15, 69%, 37%));
+    padding: 15px;
+    border-radius: 15px;
+    right: 10px;
+    position: relative;
+    bottom: 100px;
+    transform: rotate(4deg);
+    box-shadow: 2px 2px 2px hsl(15, 69%, 37%);
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: -250px 50px;
+}
+.right:hover{
+    transform: scale(1.1);
+}
+
+.bottom{
+    
+    height: 200px;
+    border: 1px solid hsl(36, 22%, 86%);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bottom:hover{
+    transform: scale(1.1);
+}
+
+.iconbottom{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.an{
+    position: relative;
+    top: 700px;
+    right: 700px;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+.mobilehead{
+    display: none;
+}
+.bottomstuff{
+    display: flex; 
+    gap: 35px; 
+    position: relative; 
+    left: 400px; 
+    bottom: 300px;
+}
+
+@media(max-width:768px){
+    .menu{
+        display: none;
+    }
+    .mobilehead{
+        display: flex;
+        width: 768px;
+    }
+    .logo{
+        width: 768px;
+    }
+    .left{
+        position: relative;
+        top: 150px;
+        left: -125px;
+        transform: rotate(4deg);
+    }
+    .right{
+        position: relative;
+        top: 135px;
+        left: -125px;
+        transform: rotate(-4deg);
+    }
+    .bottomstuff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        left: 0px;
+    }
+    .middle{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
